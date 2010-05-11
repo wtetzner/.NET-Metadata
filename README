@@ -1,0 +1,23 @@
+.NET Metadata provides an overloaded extension method (Meta) on all objects,
+which allows data to be stored for any instance of any reference type.
+
+It is for the .NET Framework 4.0 or later.
+
+An Example
+----------
+
+using BovineGenius.Metadata;
+
+Hashtable money = new Hashtable();
+money["Fred"] = 300.00;
+money["Sam"] = 450.00;
+money["George"] = 7000.00;
+// Store metadata about where this Hashtable came from
+money.Meta("Origin", "Code");
+
+Hashtable people = DB.GetPeople();
+// Store metadata saying this Hashtable came from the database
+people.Meta("Origin", "Database");
+
+var moneyOrigin = money.Meta("Origin"); // "Code"
+var peopleOrigin = people.Meta("Origin"); // "Database"
