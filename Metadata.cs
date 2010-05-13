@@ -25,7 +25,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Runtime.CompilerServices;
 
-namespace BovineGenius.Metadata
+namespace org.bovinegenius.Metadata
 {
     /// <summary>
     /// Allows for metadata to be associated with any instance of any reference type.
