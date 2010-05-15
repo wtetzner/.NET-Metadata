@@ -6,7 +6,7 @@ It is for the .NET Framework 4.0 or later.
 An Example
 ----------
 
-using BovineGenius.Metadata;
+using org.bovinegenius.Metadata;
 
 Hashtable money = new Hashtable();
 money["Fred"] = 300.00;
